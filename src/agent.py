@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 from langchain_openai import ChatOpenAI
 from langchain.agents import AgentExecutor, create_tool_calling_agent
 from langchain_core.prompts import ChatPromptTemplate
-from src.tools import calculadora
+from src.tools import calculator
 
 load_dotenv()
 
@@ -24,7 +24,7 @@ def build_agent_executor() -> AgentExecutor:
         ("placeholder", "{agent_scratchpad}"),
     ])
     
-    tools = [calculadora]
+    tools = [calculator]
     
     # Creates agent intelligence based on tool calling.
     agent = create_tool_calling_agent(llm, tools, prompt)
