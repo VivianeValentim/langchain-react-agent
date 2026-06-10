@@ -2,7 +2,7 @@ from src.agent import build_agent_executor
 
 def main():
     print("\n" + "="*50)
-    print("🤖 Agentic Query Router Iniciado")
+    print("Agentic Query Router Iniciado")
     print("Digite 'sair' para encerrar a aplicação.")
     print("="*50 + "\n")
     
